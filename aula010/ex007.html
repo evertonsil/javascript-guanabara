@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 007 - Somando Valores</title>
+    <style>
+        div.container{
+            text-align: center;        
+        }
+        p#result{
+           color: #000000;
+           font-weight: bold;
+           font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Soma</h1>        
+        <input type="number" name="num1" id="num1">
+        +
+        <input type="number" name="num2" id="num2">
+        <button id="somar">Somar</button>
+        <p id="result"></p>
+    </div>
+    <script>
+        var btnSomar = document.querySelector('#somar');
+        btnSomar.addEventListener('click', somar);
+
+        function somar(){
+            var num1 = document.querySelector('#num1').value;
+            var num2 = document.querySelector('#num2').value;
+            var resultado = Number(num1) + Number(num2);
+            var result = document.querySelector('#result');
+            result.innerHTML = `O resultado da soma entre ${num1} e ${num2} é igual a ${resultado}`;
+        }
+    </script>
+</body>
+</html>

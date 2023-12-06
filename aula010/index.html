@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - Aula 009 | Eventos DOM</title>
+    <style>
+        #area{
+            background: #1B0044;
+            color: #FFF;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            font: normal 20pt Helvetica;
+            line-height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div id="area">
+        
+    </div>
+    <script>
+        var area = document.querySelector('#area');
+        
+        area.addEventListener('click', clicar)
+        area.addEventListener('mouseenter', entrar)
+        area.addEventListener('mouseout', sair)
+
+        function clicar(){
+            area.style.backgroundColor = '#03300B';
+            area.innerHTML = 'Clicou';
+        }
+        function entrar(){
+            area.style.backgroundColor = '#004355';
+            area.innerHTML = 'Entrou';
+        }
+        function sair(){
+            area.style.backgroundColor = '#1B0044';
+            area.innerHTML = '';
+        }
+    </script>
+</body>
+</html>

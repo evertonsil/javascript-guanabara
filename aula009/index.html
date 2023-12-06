@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - Aula 009 | Introdução ao DOM</title>
+    <style>
+        body{
+            background-color: #00101F;
+            color: #FFF;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="main_title">Estudos DOM</h1>
+    <p>Resultado</p>
+    <p class="description">Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div name="btnclick">Click</div>
+    <script>
+        /*
+            Podemos selecionar elementos por
+            Marca
+            ID
+            Nome
+            Classe
+            Seletor
+        */
+        //Selecionando elemento por Marca (tag) (nesse exemplo pega somente o primeiro elemento de tag <p>)
+            var p1 = document.getElementsByTagName('p')[0];
+            p1.style.color = 'purple';
+        //Selecionando elemento por ID
+            var p2 = document.getElementById('main_title');
+            p2.innerHTML= 'Trocando título com javascript';
+        //Selecionando elemento por Nome
+            var p3 = document.getElementsByName('btnclick');
+        //Selecionando elemento por Classe
+            var p4 = document.getElementsByClassName('description');
+        //Selecionando elemento por Seletor
+            var p5 = document.querySelector('body');
+            p5.style.backgroundColor = '#000';
+            
+    </script>
+</body>
+</html>
