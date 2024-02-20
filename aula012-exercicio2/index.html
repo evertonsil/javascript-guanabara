@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📆 Verificador de Idade</title>
+    <link rel="stylesheet" type="text/css" href="./assets/styles.css" media="screen" />
+</head>
+<body>
+    <header>
+        <h1 class="">📆 Verificador de Idade</h1>
+    </header>
+    <section>
+        <div class="">
+            <p>Ano de Nascimento:
+                <input type="date" name="dataNasc" id="dataNasc">
+            </p>
+            <p>Sexo:
+                <input value="m" type="radio" name="rdnSexo" id="masculino" checked>
+                <label for="masculino">Masculino</label>
+                <input value="f" type="radio" name="rdnSexo" id="feminino">
+                <label for="masculino">Feminino</label>
+            </p>
+            <p>
+                <input type="button" value="Verificar" onclick="verificaIdade()">
+            </p>
+        </div>
+        <div id="idade">
+            
+        </div>
+        <div id="imgIdade">
+
+        </div>
+    </section>
+    <footer>
+        <p>&copy;Everton Marques</p>
+    </footer>
+    <script src="./assets/scripts.js"></script>
+</body>
+</html>

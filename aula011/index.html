@@ -4,8 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS - Aula 011 | Condições</title>
+    <style>
+        .container{
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="container">
+        <h1>Sistema de Multas</h1>
+        <label for="vel">Velocidade Registrada</label>
+        <input type="number" name="vel" id="vel"><span> km/h</span>
+        <input id="btnValidaVel" type="button" value="Validar">
+        <span id="result"></span>
+    </div>
+    <script>
+        var btnValidaVel = document.querySelector('#btnValidaVel');
+        btnValidaVel.addEventListener('click', validaVel);
+
+        function validaVel(){
+            var result = document.querySelector('#result')
+            var vel = document.querySelector('#vel').value;
+            if (vel){
+                if (vel > 60){
+                    result.innerHTML = `<p>Você foi multado! 🛑 <br>Velocidade registrada: ${vel}km/h</p>`;
+                }
+                else{
+                    result.innerHTML = `<p>Velocidade registrada: ${vel}km/h</p>`;
+                }
+            }
+            
+        }
+    </script>
 </body>
 </html>
