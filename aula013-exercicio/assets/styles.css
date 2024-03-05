@@ -1,0 +1,32 @@
+body{   
+    background-color: rgb(90, 0, 99);
+    font-family: monospace;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+header{
+    text-align: center;
+    color: #ffffff;
+}
+
+section{
+   background-color: rgb(255, 255, 255);
+   padding: 10px;
+   border-radius: 10px;
+   width: 50%;
+   margin: auto;
+   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.39);
+   text-align: center;
+}
+
+.error{
+    color: #E52207;
+    font-size: 14px;
+}
+
+footer{
+    text-align: center;
+    color: #ffffff;
+    font-style: italic;
+}

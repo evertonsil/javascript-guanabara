@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💯 Contagem</title>
+    <link rel="stylesheet" type="text/css" href="./assets/styles.css" media="screen" />
+</head>
+<body>
+    <header>
+        <h1>💯 Contagem</h1>
+    </header>
+    <section>
+        <div>
+            <p>
+                Início:
+                <input type="number" name="start" id="start">
+                <p><span class="error errorNumStart"></span></p>
+            </p>
+            <p>
+                Fim:
+                <input type="number" name="end" id="end">
+                <p><span class="error errorNumEnd"></span></p>
+            </p>
+            <p>
+                Intervalo:
+                <input type="number" name="range" id="range">
+                <p><span class="error errorRange"></span></p>
+            </p>
+            <button type="button" id="count">Contar</button>
+        </div>
+        <div>
+            <p id="result"></p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy;Everton Marques</p>
+    </footer>
+    <script src="./assets/scripts.js"></script>
+</body>
+</html>
