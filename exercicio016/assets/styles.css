@@ -1,0 +1,22 @@
+.main{
+    padding: 30px;
+    background-color: #22045a;
+    color: #d3d3d3;
+    text-align: center;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.card{
+    padding: 20px;
+}
+
+.error{
+    display: none;
+    color: #a50202;
+    font-size: 16px;
+}
+
+#listaNumeros{
+    font-weight: bold;
+}
