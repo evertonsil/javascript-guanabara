@@ -55,7 +55,6 @@ btnFinalizar.addEventListener('click', function () {
 });
 
 function qtdNumeros(numeros) {
-    console.log('Quantidade: ' + numeros.length);
 
     return numeros.length;
 }
@@ -67,7 +66,6 @@ function maiorNumero(numeros) {
     });
     //Pega o último elemento do array
     let maiorNumero = numeros[numeros.length - 1];
-    console.log('Maior: ' + maiorNumero);
     return maiorNumero;
 }
 
@@ -78,17 +76,14 @@ function menorNumero(numeros) {
     });
     //Pega o primeiro elemento do array
     let menorNumero = numeros[0];
-    console.log('Menor: ' + menorNumero);
     return menorNumero;
 }
 
 function somaNumeros(numeros) {
     let soma = 0;
-    for (let i = 0; i < numeros.length; i++) {
-        let num = parseInt(numeros[i]);
-        soma += num[i];
+    for (let i in numeros) {
+        soma += parseInt(numeros[i]);
     }
-    console.log('Soma: ' + soma);
     return soma;
 }
 
@@ -97,13 +92,11 @@ function mediaNumeros(numeros) {
     let media = 0;
     let totalNum = numeros.length;
 
-    for (let i = 0; i < numeros.length; i++) {
-        let num = parseInt(numeros[i]);
-        soma += num[i];
+    for (let i in numeros) {
+        soma += parseInt(numeros[i]);
     }
 
     media = soma / totalNum;
-    console.log('Média: ' + media);
     return media;
 }
 
